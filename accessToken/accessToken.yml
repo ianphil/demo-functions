@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://23.100.5.130:8080
+
+functions:
+  accesstoken:
+    lang: node
+    handler: ./accessToken
+    image: tripdubroot/accesstoken:v0.0.3
+    environment:
+      client_id: bde23ce75d7
+      client_secret: 6RdlOs4dPO+t+8M=
+      resource: https://management.azure.com/

@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://23.100.5.130:8080   
+
+functions:
+  getresourcegroup:
+    lang: node
+    handler: ./getresourcegroup
+    image: tripdubroot/getresourcegroup:v0.0.2
+    environment:
+      subId: 2295f62b-34e7-40a1-9e9f-6def6b9f20b7

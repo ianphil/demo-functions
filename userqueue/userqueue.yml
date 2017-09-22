@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://23.100.5.130:8080
+
+functions:
+  userqueue:
+    lang: node
+    handler: ./userqueue
+    image: tripdubroot/userqueue:v0.0.1
+    environment:
+      subId: 2295f62b-34e7-40a1-9e9f-6def6b9f20b7
+      AZURE_STORAGE_ACCOUNT: something
+      AZURE_STORAGE_ACCESS_KEY: somehting
