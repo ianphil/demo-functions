@@ -1,6 +1,6 @@
 provider:
   name: faas
-  gateway: http://gateway:8080
+  gateway: http://10.255.0.10:8080
 
 functions:
   createresourcegroup:
