@@ -1,11 +1,11 @@
 provider:
   name: faas
-  gateway: http://23.100.5.130:8080
+  gateway: http://127.0.0.1:8080
 
 functions:
   createresourcegroup:
     lang: node
     handler: ./createResourceGroup
-    image: tripdubroot/createresourcegroup:v0.0.13
+    image: tripdubroot/createresourcegroup:demo
     environment:
       subId: 2295f62b-34e7-40a1-9e9f-6def6b9f20b7
