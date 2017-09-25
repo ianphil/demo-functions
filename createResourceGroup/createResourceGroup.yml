@@ -6,6 +6,6 @@ functions:
   createresourcegroup:
     lang: node
     handler: ./createResourceGroup
-    image: tripdubroot/createresourcegroup:demo
+    image: tripdubroot/createresourcegroup:v1.demo
     environment:
       subId: 2295f62b-34e7-40a1-9e9f-6def6b9f20b7
